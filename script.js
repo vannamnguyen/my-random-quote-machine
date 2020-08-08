@@ -131,8 +131,7 @@ $(document).ready(function () {
   $("#facebook-quote").on("click", function () {
     if (!inIframe()) {
       openURL(
-        "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" +
-          encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
+        "https://www.facebook.com/sharer/sharer.php?u=https://my-random-quote-machine.herokuapp.com/"
       );
     }
   });
