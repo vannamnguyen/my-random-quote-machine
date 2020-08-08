@@ -35,7 +35,7 @@ function openURL(url) {
   window.open(
     url,
     "Share",
-    "width=550, height=400, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0"
+    "width=850, height=700, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0"
   );
 }
 
@@ -126,7 +126,14 @@ $(document).ready(function () {
       );
     }
   });
-
+  $("#fb-quote").on("click", function () {
+    if (!inIframe()) {
+      openURL(
+        "https://www.facebook.com/" +
+          encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
+      );
+    }
+  });
   $("#tumblr-quote").on("click", function () {
     if (!inIframe()) {
       openURL(

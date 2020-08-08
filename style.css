@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500);
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ div {
 body {
   background-color: #333;
   color: #333;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -39,21 +39,21 @@ body {
 #quote-box {
   border-radius: 3px;
   position: relative;
-  width: 450px;
+  width: 800px;
   padding: 40px 50px;
   display: table;
   background-color: #fff;
 }
 #quote-box .quote-text {
   text-align: center;
-  width: 450px;
+  width: 800px;
   height: auto;
   clear: both;
   font-weight: 500;
   font-size: 1.75em;
 }
 #quote-box .quote-text i {
-  font-size: 1.0em;
+  font-size: 1em;
   margin-right: 0.4em;
 }
 #quote-box .quote-author {
@@ -85,7 +85,8 @@ body {
 #quote-box .buttons .button:hover {
   opacity: 0.9;
 }
-#quote-box .buttons .button#tweet-quote, #quote-box .buttons .button#tumblr-quote {
+#quote-box .buttons .button#tweet-quote,
+#quote-box .buttons .button#tumblr-quote {
   float: left;
   padding: 0px;
   padding-top: 8px;
