@@ -122,7 +122,7 @@ $(document).ready(function () {
   $("#tweet-quote").on("click", function () {
     if (!inIframe()) {
       openURL(
-        "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
+        "https://twitter.com/intent/tweet?hashtags=quotes&related=fcc&text=" +
           encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
       );
     }
@@ -139,7 +139,7 @@ $(document).ready(function () {
   $("#tumblr-quote").on("click", function () {
     if (!inIframe()) {
       openURL(
-        "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" +
+        "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,fcc=" +
           encodeURIComponent(currentAuthor) +
           "&content=" +
           encodeURIComponent(currentQuote) +
