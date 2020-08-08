@@ -50,7 +50,7 @@ body {
   height: auto;
   clear: both;
   font-weight: 500;
-  font-size: 1.75em;
+  font-size: 2.75em;
 }
 #quote-box .quote-text i {
   font-size: 1em;
@@ -61,7 +61,7 @@ body {
   height: auto;
   clear: both;
   padding-top: 20px;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: right;
 }
 #quote-box .buttons {
@@ -70,13 +70,13 @@ body {
   display: block;
 }
 #quote-box .buttons .button {
-  height: 38px;
+  height: 55px;
   border: none;
   border-radius: 3px;
   color: #fff;
   background-color: #333;
   outline: none;
-  font-size: 0.85em;
+  font-size: 1em;
   padding: 8px 18px 6px 18px;
   margin-top: 30px;
   opacity: 1;
@@ -92,10 +92,10 @@ body {
   padding: 0px;
   padding-top: 8px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2em;
   margin-right: 5px;
-  height: 30px;
-  width: 40px;
+  height: 50px;
+  width: 60px;
 }
 #quote-box .buttons .button#new-quote {
   float: right;
