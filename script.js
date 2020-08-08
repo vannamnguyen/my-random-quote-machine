@@ -139,7 +139,7 @@ $(document).ready(function () {
   $("#tumblr-quote").on("click", function () {
     if (!inIframe()) {
       openURL(
-        "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes=" +
+        "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=" +
           encodeURIComponent(currentAuthor) +
           "&content=" +
           encodeURIComponent(currentQuote) +
