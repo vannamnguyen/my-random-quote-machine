@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400, 500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);
 * {
   margin: 0;
   padding: 0;
@@ -86,7 +86,8 @@ body {
   opacity: 0.9;
 }
 #quote-box .buttons .button#tweet-quote,
-#quote-box .buttons .button#tumblr-quote {
+#quote-box .buttons .button#tumblr-quote,
+#quote-box .buttons .button#facebook-quote {
   float: left;
   padding: 0px;
   padding-top: 8px;

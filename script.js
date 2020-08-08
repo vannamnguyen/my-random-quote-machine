@@ -2,11 +2,6 @@ const projectName = "random-quote-machine";
 localStorage.setItem("example_project", "Randowm Quote Machine");
 let quotesData;
 
-/*
-  Code by Gabriel Nunes
-  Modified by Todd Chaffee to use Camper gist for JSON Quote data.
-*/
-
 function inIframe() {
   try {
     return window.self !== window.top;
@@ -74,6 +69,12 @@ function getQuote() {
       "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
         encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
     );
+    $("#facebook-quote").attr(
+      "href",
+      `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse${encodeURIComponent(
+        '"' + currentQuote + '" ' + currentAuthor
+      )}`
+    );
 
     $("#tumblr-quote").attr(
       "href",
@@ -126,14 +127,16 @@ $(document).ready(function () {
       );
     }
   });
-  $("#fb-quote").on("click", function () {
+
+  $("#facebook-quote").on("click", function () {
     if (!inIframe()) {
       openURL(
-        "https://www.facebook.com/" +
+        "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" +
           encodeURIComponent('"' + currentQuote + '" ' + currentAuthor)
       );
     }
   });
+
   $("#tumblr-quote").on("click", function () {
     if (!inIframe()) {
       openURL(
