@@ -29,8 +29,8 @@ var currentQuote = "",
 function openURL(url) {
   window.open(
     url,
-    "Share",
-    "width=850, height=700, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0"
+    "Share"
+    //"width=850, height=700, toolbar=0, scrollbars=1 ,location=0 ,statusbar=0,menubar=0, resizable=0"
   );
 }
 
@@ -45,7 +45,7 @@ function getQuotes() {
       if (typeof jsonQuotes === "string") {
         quotesData = JSON.parse(jsonQuotes);
         console.log("quotesData");
-        console.log(quotesData);
+        //console.log(quotesData);
       }
     },
   });
